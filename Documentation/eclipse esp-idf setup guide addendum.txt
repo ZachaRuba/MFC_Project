@@ -1,0 +1,42 @@
+espressif official guide: https://github.com/espressif/idf-eclipse-plugin/blob/master/README.md
+Also: https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html
+
+// I've tried following the guide carefully but I still had issues building thus...
+Paul's tested guide:
+
+Prerequisities
+- Java 8 (Latest)
+- Python 3.7 (Didn't check 3.8)
+- Eclipse (Latest)
+- Git (Latest)
+
+Confirm Prerequisite
+1. Open up Command Prompt or Powershell
+2. type: "java -version"; response should be the version of Java
+3. type: "python --version" (might show oldest version of python installed instead);
+4. type: "git --version"
+
+Git
+- On a directory of your choosing, "git clone --recursive https://github.com/espressif/esp-idf" // This installs the stable version of ESP-IDF
+
+Eclipse (Same as official guide)
+1. Install C/C++ perspective of Eclipse
+2. Go to Help > Install New Software
+3. Click Add..
+4. Enter Location "https://dl.espressif.com/dl/idf-eclipse-plugin/updates/latest/"
+5. Name as "Espressif IDF Plugins for Eclipse"
+6. Click Ok
+7. Select Espressif IDF and install.
+8. Will probably be prompted to restart
+
+Installing ESP-IDF Tools on Eclipse
+1. Go to Help > Espressif IDF Tools Manager > Install Tools
+2. Enter the directory where you cloned the esp-idf repository
+3. Select Python version (3.7)
+4. Click Ok
+5. You should see the status of the installation on the Eclipse console
+
+At this point, you are pretty much setup to build and flash firmware onto the ESP32
+You should be able to follow along the official guide from here on - starting from "Create a new project using ESP-IDF Templates"
+
+P.S. the LED on our ESP32's are on GPIO 2

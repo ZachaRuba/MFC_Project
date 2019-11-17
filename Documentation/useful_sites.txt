@@ -1,0 +1,5 @@
+espressif complete documentation:
+https://docs.espressif.com/projects/esp-idf/en/latest/index.html
+
+hw/sw specs:
+esp32.net
